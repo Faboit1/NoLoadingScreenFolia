@@ -1,0 +1,17 @@
+# NoLoadingScreen configuration
+#
+# The "Loading terrain" screen is suppressed when a player teleports between two
+# worlds that share an environment (overworld to overworld, for example).
+# Teleports into a different environment are left untouched, since the client
+# genuinely has to rebuild its dimension state for those.
+
+# Apply potion effects to cover the moment before the destination chunks render.
+# Set to false to drop the respawn packet without touching the player.
+mask-chunk-load: true
+
+# Blindness duration in ticks (20 ticks = 1 second). 0 disables it.
+blind-ticks: 20
+
+# Duration in ticks of the speed/slowness pair applied during the transfer.
+# 0 disables them.
+speed-ticks: 10
