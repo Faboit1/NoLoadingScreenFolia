@@ -1,0 +1,17 @@
+name: NoLoadingScreen
+version: '${version}'
+main: dev.cheesesmp.noloadingscreen.NoLoadingScreen
+description: ${description}
+author: Unnm3d
+api-version: '1.21'
+folia-supported: true
+commands:
+  noloadingscreen:
+    description: Main command for NoLoadingScreen
+    usage: /<command> reload
+    aliases: [nls, lsr, loadingscreenremover]
+    permission: noloadingscreen.use
+permissions:
+  noloadingscreen.use:
+    description: Allows use of /noloadingscreen
+    default: op
